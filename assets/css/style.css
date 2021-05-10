@@ -1,0 +1,144 @@
+:root {
+  --blue: rgb(56, 141, 194);
+  --gray: rgba(127, 144, 150, 0.863);
+  --darkgray: rgb(59, 61, 61);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--gray);
+}
+
+header {
+  background-color: var(--blue);
+  /* display: inline-flex; */
+  padding: 20px;
+}
+
+header h1 {
+  display: inline-block;
+  /* padding-bottom: 15px; */
+}
+
+nav {
+  float: right;
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin-bottom: 30px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+section ul li {
+  display: inline;
+  padding: 20px;
+}
+
+.headshot {
+  width: 30px;
+  height: 30px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+
+  /* justify-content: center; */
+}
+
+.sidebar {
+  padding: 20px;
+  width: 20%;
+  border-right: 5px solid var(--blue);
+  text-align: right;
+  font-size: 28px;
+  font-weight: 400;
+  flex-wrap: wrap;
+  background-color: var(--darkgray);
+  color: var(--blue);
+}
+
+/* .sidebar2 {
+  /* padding: 20px; */
+
+/* width: 20%;
+  border-right: 5px solid var(--blue);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+} */
+
+.flexcontent {
+  padding: 20px;
+  width: 80%;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-big {
+  width: 600px;
+  height: 200px;
+  flex: 1 0 100;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  margin: 30px;
+  flex: 0 0 100;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact {
+  display: flex;
+  list-style-type: none;
+  /* float: right; */
+  margin: 20px;
+  justify-content: center;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    min-width: 10%;
+  }
+
+  .container1,
+  .container2,
+  .container3 {
+    flex-direction: column;
+  }
+
+  .image-big {
+    flex: 0 2 50;
+  }
+}
